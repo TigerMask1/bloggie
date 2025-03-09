@@ -3,52 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Animated Website</title>
+    <title>Modern Blog Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="hero-section">
         <nav class="navbar">
-            <a href="#" class="logo">BrandName</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#" class="logo">My Blog</a>
         </nav>
         <div class="hero-content">
-            <h1>Welcome to Our Modern Website</h1>
-            <p>Delivering excellence with every project.</p>
-            <a href="#about" class="cta-button">Learn More</a>
+            <h1>Welcome to My Modern Blog</h1>
         </div>
     </header>
-    <main>
-        <section id="about" class="about-section">
-            <h2>About Us</h2>
-            <p>We are committed to providing top-notch services to our clients.</p>
-        </section>
-        <section id="services" class="services-section">
-            <h2>Our Services</h2>
-            <div class="service-card">
-                <h3>Service One</h3>
-                <p>Description of Service One.</p>
-            </div>
-            <div class="service-card">
-                <h3>Service Two</h3>
-                <p>Description of Service Two.</p>
-            </div>
-            <div class="service-card">
-                <h3>Service Three</h3>
-                <p>Description of Service Three.</p>
-            </div>
-        </section>
+    <main class="blog-section">
+        <article class="blog-card">
+            <h2>Blog Post One</h2>
+            <p>This is a short preview of the first blog post. Click to read more.</p>
+        </article>
+        <article class="blog-card">
+            <h2>Blog Post Two</h2>
+            <p>This is a short preview of the second blog post. Click to read more.</p>
+        </article>
+        <article class="blog-card">
+            <h2>Blog Post Three</h2>
+            <p>This is a short preview of the third blog post. Click to read more.</p>
+        </article>
     </main>
     <footer class="footer">
-        <p>&copy; 2025 BrandName. All rights reserved.</p>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #fff;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 10%;
+        }
+
+        .navbar .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        .blog-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 3rem 1rem;
+        }
+
+        .blog-card {
+            background: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 2rem;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-card h2 {
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #6e8efb;
+            color: #fff;
+            border-top-left-radius: 50% 10%;
+            border-top-right-radius: 50% 10%;
+        }
+    </style>
 </body>
 </html>
